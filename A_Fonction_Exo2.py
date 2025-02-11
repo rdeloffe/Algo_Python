@@ -1,8 +1,8 @@
-a = float(input("Choisir un premier nombre :"))
-b = float(input("Choisir un second nombre :"))
+a = int(input("Choisir un premier nombre :"))
+b = int(input("Choisir un second nombre :"))
 
 def soustraire(a, b) :
-    return a - b #Renvoie le resultat de a - b
+    return a - b 
     
 resultat = soustraire(a,b)
-print(f"Le resultat de {a} - {b} = {resultat}")
+print(f"Je soustrais {a} a {b} qui donne {resultat}")
