@@ -2,6 +2,7 @@ a = int(input("Choisir un premier nombre :"))
 b = int(input("Choisir un second nombre :"))
 
 def soustraire(a, b) :
+    print(f"Je soustrait {a} et {b}")
     return a - b 
     
 resultat = soustraire(a,b)
