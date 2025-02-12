@@ -45,7 +45,7 @@ if Instruction == 2 :
 def proportion(chaine_adn, sequence_adn):
     count = 0
     for lettre in sequence_adn:
-        count += chaine_adn.count(lettre)  # Compte combien de fois chaque lettre de la séquence apparaît dans la chaîne
+        count += chaine_adn.count(lettre)
     return count
 
 if Instruction == 3:
