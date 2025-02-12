@@ -2,7 +2,7 @@ le_mot_if = str(input("Choisie un mot : "))
 def compter_a_if () :
     count = 0
     for lettre in le_mot_if :
-        if lettre == "a" :
+        if lettre != "a" :
             count += 1
     return count
 
