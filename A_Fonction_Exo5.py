@@ -10,7 +10,8 @@ Instruction = int(input(
 
 
 chaine_adn = str(input("Donnez une chaîne d'ADN : "))
-sequance_adn = str(input("Donner une sequance d'ADN : "))
+if Instruction == 3 :
+    sequance_adn = str(input("Donner une sequance d'ADN : "))
 
 def verification_adn(chaine_adn) :
     count = 0
@@ -41,11 +42,14 @@ if Instruction == 2 :
             print(f"Voici la nouvelle chaine d'ADN {new_chaine_adn}")
 
 
-def proportion(chaine_adn, sequance_adn) :
-    return chaine_adn.count(sequance_adn)
+def proportion(chaine_adn, sequence_adn):
+    count = 0
+    for lettre in sequence_adn:
+        count += chaine_adn.count(lettre)  # Compte combien de fois chaque lettre de la séquence apparaît dans la chaîne
+    return count
 
+if Instruction == 3:
+    compter = proportion(chaine_adn, sequance_adn)
+    print(f"Il y a {compter} lettres ADN identiques entre la séquence et la chaîne.")
 
-if Instruction == 3 :
-    compter = proportion(chaine_adn,sequance_adn)
-    print(f"Il y a {compter} adn identique")
 
