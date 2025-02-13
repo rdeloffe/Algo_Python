@@ -1,15 +1,3 @@
-# Liste [Pos.Nom , Pos.Nom ...]
-
-# SI panne moteur le premier passe dernier (append [Pos.Nom] PUIS pop[Pos.Nom]
-
-# SI passe_en_tete [1.DEL] [2.OPP] (pop liste(0) insert(1, i.DEL )
-
-# SI sauve_honneur [AD.DEL] [D.OPP] (pop liste (-2) append [i.DEL] )
-
-#SI tire_blaser pop(0)
-
-#SI retour_innatendu insert(-1, Concu)
-
 Menu = int(input("\n"
     "------------------- Bienvenue à la course de module de Tatooine -------------------\n\n"
     "Combien de personnes participe a cette course cette année ? :"))
@@ -62,9 +50,10 @@ def sauve_honneur(liste_nom) :
 liste_nom_SH = sauve_honneur(liste_nom)
 print(f"Classement apres le passage en tete {liste_nom_SH}")
 
+def tir_blaser(liste_nom) :
+    return
 
-# SI passe_en_tete [1.DEL] [2.OPP] (pop liste(0) insert(1, i.DEL )
-#modifiant la liste passée en argument de manière à ce que le premier module passe
-#deuxième et le deuxième premier.
+
+
 
 
