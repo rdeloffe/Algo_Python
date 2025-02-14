@@ -15,7 +15,7 @@ for nb in range (1,Menu + 1) :
     liste_nom.append(f" {nb}.{demander_nom} ")
 print (f"Classement avant le depart : {liste_nom}\n")
 
-def panne_moteur(liste_nom, liste_nom_eleminer) :
+def panne_moteur(liste_nom) :
     liste_nom.append(liste_nom[0])
     # liste_nom_eleminer.append(liste_nom[0])
     liste_nom.pop(0)
@@ -25,7 +25,7 @@ def panne_moteur(liste_nom, liste_nom_eleminer) :
         liste_nom[i] = f"{i + 1}.{nom}" #Affichage = [1.Raph]
     return liste_nom
 
-liste_nom_PM = panne_moteur(liste_nom,liste_nom_eleminer)
+liste_nom_PM = panne_moteur(liste_nom)
 print(f"Classement apres une panne moteur : {liste_nom_PM}\n")
 
 def passe_en_tete(liste_nom) :
